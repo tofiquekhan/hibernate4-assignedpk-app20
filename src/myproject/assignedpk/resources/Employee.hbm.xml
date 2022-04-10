@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+<class name="myproject.assignedpk.entity.Employee" table="emp3">
+<id name="eno" column="eno" length="3">
+<generator class="assigned"></generator>
+</id>
+<property name="ename" column="ename" length="10"/>
+<property name="esal" column="esal" length="7"/>
+<property name="eaddr" column="eaddr" length="10"/>
+</class>
+
+</hibernate-mapping>
